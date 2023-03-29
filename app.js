@@ -8,7 +8,6 @@ var customLabels = Array();
 function display_array()
   {
     var e = "<hr/>";   
-      
       for (var y=0; y<customLabels.length; y++)
       {
         e += customLabels[y] + "<br/>";
@@ -57,7 +56,6 @@ async function sendHttpRequest(method, url, data) {
     headers: {
       "Content-Type": "application/json",
       "x-api-key": "qu5c4ZERpz4YB4uqEsoYa7jpjyRvxJr269HdTknX",
-      //Authorization: "Client-ID GlxGxboGXijJhZZKPi-A76KH5XUkD1d3XHCwfGOmbKc",
     },
   })
     .then((response) => {
