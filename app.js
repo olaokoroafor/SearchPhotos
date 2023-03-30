@@ -146,6 +146,7 @@ if(SpeechRecognition) {
 
   micBtn.addEventListener("click", micBtnClick);
   function micBtnClick() {
+    console.log("Button has been clicked")
     if(micIcon.classList.contains("fa-microphone")) { // Start Voice Recognition
       recognition.start(); // First time you have to allow access to mic!
     }
@@ -157,7 +158,9 @@ if(SpeechRecognition) {
   recognition.addEventListener("start", startSpeechRecognition); // <=> recognition.onstart = function() {...}
   function startSpeechRecognition() {
     micIcon.classList.remove("fa-microphone");
+    console.log("changing to slash")
     micIcon.classList.add("fa-microphone-slash");
+    console.log("changed")
     searchFormInput.focus();
     console.log("Voice activated, SPEAK");
   }
